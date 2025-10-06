@@ -1,0 +1,25 @@
+
+2025-10-06 19:25:51,998 - INFO - Booking successful: gio booked room 101
+2025-10-06 19:25:51,998 - INFO - ---Logged booking: {'timestamp': '2025-10-06T19:25:51.998729', 'customer': 'gio', 'room_number': 101, 'room_type': 'Single', 'nights': 1, 'total_price': 110.0, 'season': 'fall'}
+2025-10-06 19:26:47,598 - WARNING - Booking failed: customer gio does not pay for booking - 550.0000000000001
+2025-10-06 19:27:37,582 - WARNING - Booking failed: customer gio does not pay for booking - 935.00
+2025-10-06 19:28:48,197 - WARNING - Booking filed: 5 guests exceed max guests of 1
+2025-10-06 19:29:24,517 - INFO - Booking successful: gio booked room 103
+2025-10-06 19:29:24,518 - INFO - ---Logged booking: {'timestamp': '2025-10-06T19:29:24.518118', 'customer': 'gio', 'room_number': 103, 'room_type': 'Double', 'nights': 3, 'total_price': 429.0, 'season': 'fall'}
+2025-10-06 19:33:43,533 - INFO - Booking successful: gio booked room 101
+2025-10-06 19:33:43,533 - INFO - ---Logged booking: {'timestamp': '2025-10-06T19:33:43.533560', 'customer': 'gio', 'room_number': 101, 'room_type': 'Single', 'nights': 1, 'total_price': 110.0, 'season': 'fall'}
+2025-10-06 19:34:04,468 - INFO - Booking successful: gio booked room 101
+2025-10-06 19:34:04,468 - INFO - ---Logged booking: {'timestamp': '2025-10-06T19:34:04.468920', 'customer': 'gio', 'room_number': 101, 'room_type': 'Single', 'nights': 1, 'total_price': 110.0, 'season': 'fall'}
+2025-10-06 19:35:00,805 - WARNING - Booking failed: customer gio does not pay for booking - 506.00
+2025-10-06 19:36:15,604 - INFO - Booking successful: gio booked room 103
+2025-10-06 19:36:15,604 - INFO - ---Logged booking: {'timestamp': '2025-10-06T19:36:15.604806', 'customer': 'gio', 'room_number': 103, 'room_type': 'Double', 'nights': 2, 'total_price': 286.0, 'season': 'fall'}
+2025-10-06 19:36:15,605 - INFO - Booking cancelled: gio cancelled Room 103
+2025-10-06 19:53:16,873 - INFO - Booking successful: lasha booked room 101
+2025-10-06 19:53:16,874 - INFO - ---Logged booking: {'timestamp': '2025-10-06T19:53:16.874083', 'customer': 'lasha', 'room_number': 101, 'room_type': 'Single', 'nights': 2, 'total_price': 220.0, 'season': 'fall'}
+2025-10-06 19:53:16,876 - WARNING - Booking failed: room 101 is not available
+2025-10-06 20:38:33,565 - INFO - Booking successful: lasha booked room 101
+2025-10-06 20:38:33,565 - INFO - ---Logged booking: {'timestamp': '2025-10-06T20:38:33.565378', 'customer': 'lasha', 'room_number': 101, 'room_type': 'Single', 'nights': 2, 'total_price': 220.0, 'season': 'fall'}
+2025-10-06 20:38:33,565 - WARNING - Booking failed: room 101 is not available
+2025-10-06 20:40:23,376 - INFO - Booking successful: lasha booked room 101
+2025-10-06 20:40:23,377 - INFO - ---Logged booking: {'timestamp': '2025-10-06T20:40:23.377176', 'customer': 'lasha', 'room_number': 101, 'room_type': 'Single', 'nights': 2, 'total_price': 220.0, 'season': 'fall'}
+2025-10-06 20:40:23,377 - WARNING - Booking failed: room 101 is not available
