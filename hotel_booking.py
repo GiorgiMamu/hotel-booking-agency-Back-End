@@ -185,7 +185,11 @@ class Hotel:
             raise ValueError(f"customer {customer.name} has no booking for room {room_number}")
 
         room.release_room()
-        customer.remove_room(room)
+        price = 0
+        for item in self.bookings_log:
+            if item['customer'] == customer.name and item['room_number'] == room_number:
+                price = item['total_price']
+        customer.budget += price
 
         logging.info(f"Booking cancelled: {customer.name} cancelled Room {room_number}")
 
@@ -208,8 +212,25 @@ if __name__ == "__main__":
         print(room)
 
     room_num =int(input("enter room number to book: "))
+    print(customer1.budget)
     hotel.book_room_for_customer(customer1, room_num, stay_days, guests_num)
+    print(customer1.budget)
     hotel.cancel_booking(customer1, room_num)
+    print(customer1.budget)
+    hotel.book_room_for_customer(customer1, 102, 1, 1)
+    print(customer1.budget)
+    hotel.book_room_for_customer(customer1, 103, 1, 1)
+    print(customer1.budget)
+    for room in hotel.show_available_rooms():
+        print(room)
+    hotel.cancel_booking(customer1, 103)
+    print(customer1.budget)
+    for room in hotel.show_available_rooms():
+        print(room)
+
+
+
+
 
 
 

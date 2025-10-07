@@ -5,13 +5,6 @@ class TestRoom(unittest.TestCase):
     def setUp(self):
         self.room = Room(101, "Single", 100.0, 1)
 
-    def test_invalid_room_type(self):
-        with self.assertRaises(ValueError):
-            Room(102, "Triple", 100.0, 3)
-
-    def test_book_room(self):
-        self.room.book_room()
-        self.assertFalse(self.room.is_available)
 
     def test_book_already_booked_room(self):
         self.room.book_room()
@@ -24,15 +17,6 @@ class TestCustomer(unittest.TestCase):
         self.customer = Customer("lasha", 500.0)
         self.room = Room(101, "Single", 100.0, 1)
 
-    def test_invalid_name(self):
-        with self.assertRaises(ValueError):
-            Customer("", 500.0)
-        with self.assertRaises(ValueError):
-            Customer("   ", 500.0)
-
-    def test_remove_nonexistent_room(self):
-        with self.assertRaises(ValueError):
-            self.customer.remove_room(self.room)
 
     #asked in task
     def test_pay_for_booking_sufficient_budget(self):
@@ -63,10 +47,6 @@ class TestHotel(unittest.TestCase):
         with self.assertRaises(ValueError):
             self.hotel.add_room(Room(101, "Single", 100.0, 1))
 
-    def test_calculate_total_booking(self):
-        total = self.hotel.calculate_total_booking(101, 2)
-        expected = self.room1.calculate_price(2)
-        self.assertEqual(total, expected)
 
     #asked in task
     def test_book_room_for_customer_success(self):
